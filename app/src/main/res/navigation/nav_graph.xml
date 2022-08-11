@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cantidadViajes">
+
+    <fragment
+        android:id="@+id/cantidadViajes"
+        android:name="com.example.appjuan.ui.CantidadViajes"
+        android:label="fragment_cantidad_viajes"
+        tools:layout="@layout/fragment_cantidad_viajes" >
+        <action
+            android:id="@+id/action_cantidadViajes_to_extrasFragment"
+            app:destination="@id/extrasFragment" />
+        <action
+            android:id="@+id/action_cantidadViajes_to_horasTrabajos"
+            app:destination="@id/horasTrabajos" />
+    </fragment>
+    <fragment
+        android:id="@+id/extrasFragment"
+        android:name="com.example.appjuan.ui.ExtrasFragment"
+        android:label="fragment_extras"
+        tools:layout="@layout/fragment_extras" >
+        <action
+            android:id="@+id/action_extrasFragment_to_detalleExtrasFragment"
+            app:destination="@id/detalleExtrasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleExtrasFragment"
+        android:name="com.example.appjuan.ui.DetalleExtrasFragment"
+        android:label="fragment_detalle_extras"
+        tools:layout="@layout/fragment_detalle_extras" />
+    <fragment
+        android:id="@+id/horasTrabajos"
+        android:name="com.example.appjuan.ui.HorasTrabajos"
+        android:label="fragment_horas_trabajos"
+        tools:layout="@layout/fragment_horas_trabajos" />
+</navigation>

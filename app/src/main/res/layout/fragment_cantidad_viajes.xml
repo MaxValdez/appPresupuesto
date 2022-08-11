@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CantidadViajes" >
+
+    <TextView
+        android:id="@+id/tv_tituCantViajes"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:text="CANTIDAD DE VIAJES"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_precioCombustible"
+        android:layout_width="300dp"
+        android:layout_height="50sp"
+        android:hint="Precio Combustible"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_precioCombustible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituCantViajes" />
+
+    <Button
+        android:id="@+id/btn_precioCombustible"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Cambiar"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_precioCombustible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_precioCombustible"
+        app:layout_constraintTop_toTopOf="@+id/tv_precioCombustible" />
+
+    <TextView
+        android:id="@+id/tv_pantalla"
+        android:layout_width="0sp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="30sp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="Pantalla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_distancia"
+        android:layout_width="0sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:hint="Distancia"
+        app:layout_constraintEnd_toEndOf="@+id/tv_precioCombustible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_precioCombustible" />
+
+    <Button
+        android:id="@+id/btn_distancia"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Cambiar"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_distancia"
+        app:layout_constraintTop_toBottomOf="@+id/btn_precioCombustible" />
+
+    <EditText
+        android:id="@+id/tv_cantidadViajes"
+        android:layout_width="0sp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:hint="Cantidad de viajes"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_cantViajes"
+        app:layout_constraintEnd_toEndOf="@+id/tv_distancia"
+        app:layout_constraintStart_toStartOf="@+id/tv_distancia"
+        app:layout_constraintTop_toBottomOf="@+id/tv_distancia" />
+
+    <Button
+        android:id="@+id/btn_cantViajes"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Cambiar"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_distancia"
+        app:layout_constraintTop_toBottomOf="@+id/tv_distancia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

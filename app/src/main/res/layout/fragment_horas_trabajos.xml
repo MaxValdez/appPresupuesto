@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.HorasTrabajos">
+
+    <TextView
+        android:id="@+id/tv_tituHorasTrabajo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="HORAS TRABAJO"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/et_manoObra"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Mano de obra"
+        app:layout_constraintTop_toBottomOf="@id/tv_tituHorasTrabajo"
+        app:layout_constraintStart_toStartOf="@id/tv_tituHorasTrabajo"
+        />
+    <Button
+        android:id="@+id/btn_manoObra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/et_manoObra"
+        app:layout_constraintTop_toTopOf="@id/et_manoObra"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="CAmbiar"
+        />
+    <EditText
+        android:id="@+id/et_horasTrabajo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Horas Trabajadas"
+        app:layout_constraintTop_toBottomOf="@id/et_manoObra"
+        app:layout_constraintStart_toStartOf="@id/et_manoObra"
+        />
+    <Button
+        android:id="@+id/btn_horasTrabajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_manoObra"
+        app:layout_constraintStart_toEndOf="@id/et_horasTrabajo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Cambiar"
+        />
+    <TextView
+        android:id="@+id/tv_pantallaHorasTrabajo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
